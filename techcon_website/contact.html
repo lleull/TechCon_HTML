@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - TechCon 2024</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header,
+      footer {
+        background-color: #003366;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+      nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+      }
+      main {
+        padding: 2rem;
+        max-width: 900px;
+        margin: auto;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      h2 {
+        margin-top: 0;
+      }
+      a {
+        color: #0066cc;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-top: 1rem;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        padding: 0.5rem;
+        margin-top: 0.25rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+      }
+      textarea {
+        height: 100px;
+        resize: vertical;
+      }
+      button[type="submit"] {
+        margin-top: 1.5rem;
+        padding: 0.75rem;
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #005bb5;
+      }
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Contact Information</h2>
+        <p>
+          Email us at:
+          <a href="mailto:email@example.com">email@example.com</a>
+        </p>
+        <p>Follow us on social media:</p>
+        <ul>
+          <li><a href="https://twitter.com/techcon2024" target="_blank">Twitter</a></li>
+          <li><a href="https://facebook.com/techcon2024" target="_blank">Facebook</a></li>
+          <li><a href="https://linkedin.com/company/techcon2024" target="_blank">LinkedIn</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Our Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0199997744296!2d-122.40136168468485!3d37.78848087975632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e9f0ea3b%3A0xe81b38db342ab15b!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </section>
+
+      <section>
+        <h2>Contact Us Form</h2>
+        <form action="submit_contact.html" method="POST">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; 2024 TechCon. All rights reserved.</footer>
+  </body>
+</html>
